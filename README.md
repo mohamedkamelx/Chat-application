@@ -75,23 +75,3 @@ The application uses three main models:
 2. Search for other users and add them as friends
 3. Navigate to the chat interface to start messaging
 4. Messages are automatically marked as read when viewed
-
-## Dependencies
-
-- Django
-- Django REST Framework
-- Python 3.x
-
-## File Structure
-
-- `views.py` - Main application logic and view functions
-- `models.py` - Database models (UserProfile, Friends, Messages)
-- `serializers.py` - API serializers for message handling
-- `templates/chat/` - HTML templates for the interface
-
-## Notes
-
-- The application uses CSRF exemption for API endpoints
-- Messages are automatically marked as seen when retrieved
-- Friend relationships are bidirectional (both users become friends)
-- Only authenticated users can access the chat features
